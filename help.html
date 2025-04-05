@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - Kainan sa Tagongtong</title>
+    <link rel="stylesheet" href="help.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="Kainan sa Tagongtong"></a>
+                </div>
+                <div class="mobile-menu-toggle">☰</div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="help.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Help Hero -->
+    <section class="help-hero">
+        <div class="container">
+            <h1>Help Center</h1>
+            <p>How can we help you today?</p>
+            <div class="search-box">
+                <input type="text" placeholder="Search help articles...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Content -->
+    <section class="help-content">
+        <div class="container">
+            <div class="help-wrapper">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Contact Form -->
+                    <div class="contact-section">
+                        <h2>Contact Us</h2>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <h3>Phone Support</h3>
+                                <p>Available 8:00 AM - 8:00 PM, Monday to Saturday</p>
+                                <a href="tel:+6321234567" class="contact-link">+63919 681 4107</a>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <h3>Email Us</h3>
+                                <p>We'll respond within 24 hours</p>
+                                <a href="mailto:help@manginasal.ph" class="contact-link">kainansatagongtong@gmail.com</a>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-comment-dots"></i>
+                                </div>
+                                <h3>Live Chat</h3>
+                                <p>Chat with our support team</p>
+                                <button class="btn btn-primary">Start Chat</button>
+                            </div>
+                        </div>
+
+                        <div class="contact-form">
+                            <h3>Send us a message</h3>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <select id="subject" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="complaint">Complaint</option>
+                                        <option value="franchise">Franchise Inquiry</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="faq-section">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What are your operating hours?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>We are open from 10:00 AM to 9:00 PM daily. However, operating hours may vary by location. Please check our Locations page for specific branch hours.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Do you offer catering services?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes, we offer catering services for special events. Please contact us at least 3 days in advance to place your catering order.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Do you have vegetarian options?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>While we specialize in grilled meats, we do offer several vegetarian options including our vegetable chopsuey and tofu sisig. Please inform our staff about any dietary restrictions.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>How can I provide feedback about my experience?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>We value your feedback! You can share your experience through our Feedback form, by emailing us at kainansatagongtong@gmail.com, or by calling our Customer Service hotline.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-all-faq">
+                            <a href="#" class="btn btn-outline">View All FAQs</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="help-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Popular Topics</h3>
+                        <ul class="topic-list">
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Ordering Process</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Delivery Information</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Payment Methods</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Promo Terms</a></li>
+                            <li><a href="#"><i class="fas fa-chevron-right"></i> Franchise FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
+                        <h3>Quick Links</h3>
+                        <ul class="quick-links">
+                            <li><a href="#"><i class="fas fa-file-alt"></i> Terms of Service</a></li>
+                            <li><a href="#"><i class="fas fa-lock"></i> Privacy Policy</a></li>
+                            <li><a href="#"><i class="fas fa-utensils"></i> Menu PDF</a></li>
+                            <li><a href="#"><i class="fas fa-map-marker-alt"></i> Find a Branch</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
+                        <div class="help-card">
+                            <img src="images/faq-icon.png" alt="FAQ">
+                            <h4>Need Immediate Help?</h4>
+                            <p>Our customer service team is ready to assist you</p>
+                            <a href="#" class="btn btn-primary">Contact Support</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Kainan sa Tagongtong">
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Franchise</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kainan sa Tagongtong. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="help.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kainan sa Tagongtong</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="logo.png" alt="Kainan sa Tagongtong">
+                    <h1><span>Kainan</span> sa Tagongtong</h1>
+                </div>
+                <div class="mobile-menu-toggle">☰</div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="help.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Hero Part-->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="hero-content">
+                <h1>"<span>Bringing</span> You the <br>Best of Every <span>Bite</span>"</h1>
+                <p>Various type of recipes that are most famous, <br> are waiting to give you a good taste.</p>
+                <a href="menu.html" class="btn btn-primary">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Menu-->
+    <section class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Best Sellers</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="chicken inasal.png" alt="Chicken Inasal">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Chicken Inasal</h3>
+                        <p class="price">₱105</p>
+                        <p class="description">Grilled chicken marinated in special spices</p>
+                        <a href="#" class="btn btn-outline">Add to Order</a>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="sisig.png" alt="Pork Sisig">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Pork Sisig</h3>
+                        <p class="price">₱105</p>
+                        <p class="description">Sizzling chopped pork with onions and chili</p>
+                        <a href="#" class="btn btn-outline">Add to Order</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="tapsilog.png" alt="Tapsilog">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Tapsilog</h3>
+                        <p class="price">₱105</p>
+                        <p class="description">Sizzling chopped pork with onions and chili</p>
+                        <a href="#" class="btn btn-outline">Add to Order</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="honey-lemon.png" alt="Honey Lemon">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Honey Lemon</h3>
+                        <p class="price">₱100</p>
+                        <p class="description">Sizzling chopped pork with onions and chili</p>
+                        <a href="#" class="btn btn-outline">Add to Order</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="beef steak.png" alt="Pork Steak">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Beef Steak</h3>
+                        <p class="price">₱139</p>
+                        <p class="description">Sizzling chopped pork with onions and chili</p>
+                        <a href="#" class="btn btn-outline">Add to Order</a>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="bulalo.png" alt="Bulalo">
+                    </div>
+                    <div class="menu-details">
+                        <h3>Bulalo</h3>
+                        <p class="price">₱279</p>
+                        <p class="description">Sizzling chopped pork with onions and chili</p>
+                        <a href="#" class="btn btn-outline">Add to Order</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="view-all">
+                <a href="menu.html" class="btn btn-secondary">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unlimited Rice Section -->
+    <section class="unli-rice-section">
+        <div class="container">
+            <div class="unli-content">
+                <h2>Unlimited Rice with Every Meal</h2>
+                <p>Enjoy our signature dishes with unlimited servings of rice</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Locations-->
+        <section class="locations-content">
+            <div class="container">
+                <h2 class="section-title">Our Business Partners</h2>
+                <div class="locations-wrapper">
+                    
+                    <!-- Map Section -->
+                    <div class="map-section">
+                        <div id="branch-map"></div>
+                        <div class="map-legend">
+                            <div class="legend-item">
+                                <span class="legend-icon" style="background-color: #D32026;"></span>
+                                <span>Camarines Norte Branch</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                  
+                    <div class="branches-list">
+                        <div class="branch-item active" data-branch="south-sipocot">
+                            <h3>Sipocot Branch</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Sitio Cabasod, Sipocot South Centro, Camarines Sur</p>
+                            <p><i class="fas fa-phone"></i> 0919 681 4107</p>
+                            <p><i class="fas fa-clock"></i> 10:00 AM - 9:00 PM (Daily)</p>
+                            <div class="branch-actions">
+                                <a href="location.html" class="btn btn-outline">View Details</a>
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=14.11408403165516,122.9808627070321" class="btn btn-primary">Get Directions</a>
+                            </div>   
+                        </div>
+                        <div class="branch-map">
+                            <img src="Branch.jpg" alt="Branch Locations">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Kainan sa Tagongtong">
+                </div>
+                <div class="footer-links">
+                    <!-- This will be hidden on mobile -->
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Franchise</a></li>
+                        </ul>
+                    </div>
+                    <!-- This will be hidden on mobile -->
+                    <div class="link-group">
+                        <h4>Help</h4>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Feedback</a></li>
+                        </ul>
+                    </div>
+                    <!-- This will remain visible on mobile -->
+                    <div class="link-group">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kainan sa Tagongtong. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Map
+            const map = L.map('branch-map').setView([14.11408403165516, 122.9808627070321], 15);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Custom icon
+            const customIcon = L.divIcon({
+                className: 'map-marker',
+                html: '<div style="background-color: #D32026; color: white; padding: 5px 10px; border-radius: 20px; font-weight: bold;">Camarines Norte Branch</div>',
+                iconSize: [120, 40],
+                iconAnchor: [60, 40]
+            });
+
+            // Add marker
+            const marker = L.marker([14.11408403165516, 122.9808627070321], {
+                icon: customIcon
+            }).addTo(map);
+
+            // Popup content
+            marker.bindPopup(`
+                <div style="font-family: Arial, sans-serif;">
+                    <h3 style="color: #D32026; margin-bottom: 10px;">Sipocot Branch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Sitio Cabasod, Sipocot South Centro, Camarines Sur</p>
+                    <p><i class="fas fa-phone"></i> 0919 681 4107</p>
+                    <p><i class="fas fa-clock"></i> 10:00 AM - 9:00 PM (Daily)</p>
+                </div>
+            `);
+
+            // Fix map display issues
+            setTimeout(() => {
+                map.invalidateSize();
+            }, 200);
+
+            window.addEventListener('resize', function() {
+                map.invalidateSize();
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
